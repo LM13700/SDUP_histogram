@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Jun 21 17:04:17 2022
+# Process ID: 18920
+# Current directory: d:/AGH/Semestr_VIII/SDUP/Projekt/Project/ip_repo/edit_histogram_ip_v1_0.runs/synth_1
+# Command line: vivado.exe -log histogram_ip_v1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source histogram_ip_v1_0.tcl
+# Log file: d:/AGH/Semestr_VIII/SDUP/Projekt/Project/ip_repo/edit_histogram_ip_v1_0.runs/synth_1/histogram_ip_v1_0.vds
+# Journal file: d:/AGH/Semestr_VIII/SDUP/Projekt/Project/ip_repo/edit_histogram_ip_v1_0.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source histogram_ip_v1_0.tcl -notrace

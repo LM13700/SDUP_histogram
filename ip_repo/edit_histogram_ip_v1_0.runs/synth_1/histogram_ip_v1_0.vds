@@ -1,0 +1,303 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Jun 21 17:04:17 2022
+# Process ID: 18920
+# Current directory: d:/AGH/Semestr_VIII/SDUP/Projekt/Project/ip_repo/edit_histogram_ip_v1_0.runs/synth_1
+# Command line: vivado.exe -log histogram_ip_v1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source histogram_ip_v1_0.tcl
+# Log file: d:/AGH/Semestr_VIII/SDUP/Projekt/Project/ip_repo/edit_histogram_ip_v1_0.runs/synth_1/histogram_ip_v1_0.vds
+# Journal file: d:/AGH/Semestr_VIII/SDUP/Projekt/Project/ip_repo/edit_histogram_ip_v1_0.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source histogram_ip_v1_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/AGH/Semestr_VIII/SDUP/Projekt/Project/ip_repo/histogram_ip_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/AGH/Semestr_VIII/SDUP/Projekt/Project/ip_repo/histogram_ip_1.0/hdl/histogram_ip_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/AGH/Semestr_VIII/SDUP/Projekt/Project/ip_repo/histogram_ip_1.0/hdl/histogram_ip_v1_0.v:]
+Command: synth_design -top histogram_ip_v1_0 -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7048 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 457.180 ; gain = 176.977
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'histogram_ip_v1_0' [d:/AGH/Semestr_VIII/SDUP/Projekt/Project/ip_repo/histogram_ip_1.0/hdl/histogram_ip_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'histogram_ip_v1_0_S00_AXI' [d:/AGH/Semestr_VIII/SDUP/Projekt/Project/ip_repo/histogram_ip_1.0/hdl/histogram_ip_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [d:/AGH/Semestr_VIII/SDUP/Projekt/Project/ip_repo/histogram_ip_1.0/hdl/histogram_ip_v1_0_S00_AXI.v:231]
+INFO: [Synth 8-226] default block is never used [d:/AGH/Semestr_VIII/SDUP/Projekt/Project/ip_repo/histogram_ip_1.0/hdl/histogram_ip_v1_0_S00_AXI.v:372]
+INFO: [Synth 8-6157] synthesizing module 'histogram_rtl' [d:/AGH/Semestr_VIII/SDUP/Projekt/Project/ip_repo/histogram_ip_1.0/hdl/histogram_ip_v1_0_S00_AXI.v:432]
+	Parameter PIX_SIZE bound to: 8 - type: integer 
+	Parameter HIST_BIN_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'histogram_rtl' (1#1) [d:/AGH/Semestr_VIII/SDUP/Projekt/Project/ip_repo/histogram_ip_1.0/hdl/histogram_ip_v1_0_S00_AXI.v:432]
+INFO: [Synth 8-6155] done synthesizing module 'histogram_ip_v1_0_S00_AXI' (2#1) [d:/AGH/Semestr_VIII/SDUP/Projekt/Project/ip_repo/histogram_ip_1.0/hdl/histogram_ip_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'histogram_ip_v1_0' (3#1) [d:/AGH/Semestr_VIII/SDUP/Projekt/Project/ip_repo/histogram_ip_1.0/hdl/histogram_ip_v1_0.v:4]
+WARNING: [Synth 8-3331] design histogram_ip_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design histogram_ip_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design histogram_ip_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design histogram_ip_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design histogram_ip_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design histogram_ip_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 519.887 ; gain = 239.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 519.887 ; gain = 239.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 519.887 ; gain = 239.684
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 635.391 ; gain = 355.188
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               16 Bit    Registers := 258   
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 263   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module histogram_rtl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 257   
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 258   
+Module histogram_ip_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design histogram_ip_v1_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design histogram_ip_v1_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design histogram_ip_v1_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design histogram_ip_v1_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design histogram_ip_v1_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design histogram_ip_v1_0 has unconnected port s00_axi_arprot[0]
+INFO: [Synth 8-3886] merging instance 'histogram_ip_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'histogram_ip_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\histogram_ip_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'histogram_ip_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'histogram_ip_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\histogram_ip_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:08:12 ; elapsed = 00:08:55 . Memory (MB): peak = 850.383 ; gain = 570.180
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:08:16 ; elapsed = 00:08:58 . Memory (MB): peak = 850.383 ; gain = 570.180
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:08:20 ; elapsed = 00:09:02 . Memory (MB): peak = 850.383 ; gain = 570.180
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:08:24 ; elapsed = 00:09:07 . Memory (MB): peak = 850.383 ; gain = 570.180
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:08:24 ; elapsed = 00:09:07 . Memory (MB): peak = 850.383 ; gain = 570.180
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:08:24 ; elapsed = 00:09:07 . Memory (MB): peak = 850.383 ; gain = 570.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:08:24 ; elapsed = 00:09:07 . Memory (MB): peak = 850.383 ; gain = 570.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:08:25 ; elapsed = 00:09:07 . Memory (MB): peak = 850.383 ; gain = 570.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:08:25 ; elapsed = 00:09:08 . Memory (MB): peak = 850.383 ; gain = 570.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     4|
+|3     |LUT1   |     1|
+|4     |LUT2   |    68|
+|5     |LUT3   |     1|
+|6     |LUT4   |    52|
+|7     |LUT5   |    15|
+|8     |LUT6   |  2458|
+|9     |MUXF7  |  1056|
+|10    |MUXF8  |   528|
+|11    |FDRE   |  4301|
+|12    |FDSE   |     1|
+|13    |IBUF   |    47|
+|14    |OBUF   |    41|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------------------------+--------------------------+------+
+|      |Instance                         |Module                    |Cells |
++------+---------------------------------+--------------------------+------+
+|1     |top                              |                          |  8574|
+|2     |  histogram_ip_v1_0_S00_AXI_inst |histogram_ip_v1_0_S00_AXI |  8485|
+|3     |    histogram_rtl_inst           |histogram_rtl             |  8248|
++------+---------------------------------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:08:25 ; elapsed = 00:09:08 . Memory (MB): peak = 850.383 ; gain = 570.180
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:08:25 ; elapsed = 00:09:08 . Memory (MB): peak = 850.383 ; gain = 570.180
+Synthesis Optimization Complete : Time (s): cpu = 00:08:25 ; elapsed = 00:09:08 . Memory (MB): peak = 850.383 ; gain = 570.180
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1588 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'histogram_ip_v1_0' is not ideal for floorplanning, since the cellview 'histogram_rtl' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 850.383 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+24 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:08:58 ; elapsed = 00:09:47 . Memory (MB): peak = 850.383 ; gain = 570.180
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 850.383 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'd:/AGH/Semestr_VIII/SDUP/Projekt/Project/ip_repo/edit_histogram_ip_v1_0.runs/synth_1/histogram_ip_v1_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 850.383 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file histogram_ip_v1_0_utilization_synth.rpt -pb histogram_ip_v1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 21 17:14:18 2022...

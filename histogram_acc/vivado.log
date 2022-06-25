@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Jun 25 14:14:35 2022
+# Process ID: 5776
+# Current directory: D:/AGH/Semestr_VIII/SDUP/Projekt/Project/histogram_acc
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17152 D:\AGH\Semestr_VIII\SDUP\Projekt\Project\histogram_acc\histogram_acc.xpr
+# Log file: D:/AGH/Semestr_VIII/SDUP/Projekt/Project/histogram_acc/vivado.log
+# Journal file: D:/AGH/Semestr_VIII/SDUP/Projekt/Project/histogram_acc\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/AGH/Semestr_VIII/SDUP/Projekt/Project/histogram_acc/histogram_acc.xpr
+Scanning sources...
+Finished scanning sources
+IINFO: [IP_Flow 19-234] Refreshing IP repositoriesINFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/AGH/Semestr_VIII/SDUP/Projekt/Project/ip_repo/histogram_ip_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_acc.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_acc_histogram_ip_0_0
+
+oopen_project: Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 688.008 ; gain = 102.96upupdate_compile_order -fileset sources_exlaunch_sdk -workspace D:/AGH/Semestr_VIII/SDUP/Projekt/Project/histogram_acc/histogram_acc.sdk -hwspec D:/AGH/Semestr_VIII/SDUP/Projekt/Project/histogram_acc/histogram_acc.sdk/design_acc_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/AGH/Semestr_VIII/SDUP/Projekt/Project/histogram_acc/histogram_acc.sdk -hwspec D:/AGH/Semestr_VIII/SDUP/Projekt/Project/histogram_acc/histogram_acc.sdk/design_acc_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 25 15:40:07 2022...
