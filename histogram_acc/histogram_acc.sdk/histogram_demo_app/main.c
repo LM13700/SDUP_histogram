@@ -27,17 +27,6 @@ void Histogram_Reset(void);
 bool Histogram_WritePixels(u8* pixels, size_t pixelsLength);
 bool Histogram_ReadHistogram(u16* histogram, size_t histogramLength);
 
-u32 read2DigitDecVal()
-{
-    u32 ret = 0;
-    char8 c;
-    outbyte ( c = inbyte() );
-    ret += 10 * (c - '0');
-    outbyte ( c = inbyte() );
-    ret += (c - '0');
-    return ret;
-}
-
 void waitForMarker(void)
 {
     bool isReceived;
